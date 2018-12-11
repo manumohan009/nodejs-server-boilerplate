@@ -28,7 +28,6 @@ user.post('/logout', auth.isAuthorized, userController.logout);
 module.exports = user;
 
 
-
 // --------------------------------------------------------------------------------
 
 // route middleware that will happen on every request
