@@ -1,0 +1,22 @@
+{
+    "env":"development",
+    "development": {
+        "port": 9000,
+        "allowedCorsOrigin": "*",
+        "db_uri": "mongodb://127.0.0.1:27017/clientPanelDB",
+        "baseURL": "/api/v1"
+    },
+    "test": {
+        "port": 9000,
+        "allowedCorsOrigin": "*",
+        "db_uri": "mongodb://127.0.0.1:27017/clientPanelDB",
+        "baseURL": "/api/v1"
+    },
+    "prod": {
+        "port": 9000,
+        "allowedCorsOrigin": "*",
+        "db_uri": "mongodb://127.0.0.1:27017/clientPanelDB",
+        "baseURL": "/api/v1"
+    }
+  }
+  
