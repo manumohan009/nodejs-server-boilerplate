@@ -29,13 +29,13 @@ let verifyClaim = (token,secretKey,cb) => {
   // verify a token symmetric
   jwt.verify(token, secretKey, function (err, decoded) {
     if(err){
-      console.log("error while verify token");
+      console.log("Error while verify token");
       console.log(err);
       cb(err,null)
     }
     else{
-      console.log("user verified");
-      console.log(decoded);
+      console.log("User verified");
+      // console.log(decoded);
       cb(null,decoded);
     }
 

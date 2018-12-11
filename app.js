@@ -45,6 +45,7 @@ app.all('*', function(req, res, next) {
 });
 
 
+
 // Bootstrap models
 fs.readdirSync(modelsPath).forEach(function (file) {
     if (~file.indexOf('.js')) {
@@ -59,7 +60,8 @@ fs.readdirSync(modelsPath).forEach(function (file) {
 fs.readdirSync(routesPath).forEach(function (file) {
     if (~file.indexOf('.js')) {
         const route = require(routesPath + '/' + file);
-        route.setRouter(app);
+        var routeName = appConfig.baseURL+ "/"+file.substring(0,file.indexOf('-route.js'));
+        app.use(routeName,route);
     }
 });
 // end bootstrap route
