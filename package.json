@@ -19,7 +19,7 @@
     "jsonwebtoken": "^8.4.0",
     "lodash": "^4.17.15",
     "moment": "^2.22.2",
-    "moment-timezone": "^0.5.23",
+    "moment-timezone": "^0.5.35",
     "mongoose": "^5.8.11",
     "morgan": "^1.9.1",
     "pino": "^5.9.0",
